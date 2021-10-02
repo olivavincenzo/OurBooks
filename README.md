@@ -1,4 +1,10 @@
 # OurBooks
+Progetto Tecnologie Web Universitá degli Studi di Napoli “Parthenope”
+
+Scuola interdipartimentale delle Scienze, dell’Ingegneria e della Salute
+
+Dipartimento di Scienze e TecnologieCorso di laurea in Informatica
+
 ## Come eseguire OurBooks
 
 Se usiamo un IDE come PyCharm viene creata automaticamente 
