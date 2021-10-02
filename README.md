@@ -11,7 +11,7 @@ Altrimenti esegui questa mini-guida:
 
 `.\venv\Scripts\activate`
 
-2. Attivata la virtual environment installiamo i requirements:
+2. Installiamo i requirements:
 
 `pip install -r requirements.txt`
 
@@ -28,7 +28,7 @@ Altrimenti esegui questa mini-guida:
 `flask run`
 
 Nel terminare sarà mostrato un indirizzo.
-Clicchiamo sull'indizizzo e si aprira la nostra web app "OurBooks"
+Clicchiamo sull'indirizzo e si aprirà la nostra web app "OurBooks"
 
 
 
