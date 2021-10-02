@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{%  block content %}
+
+<body onload="loadSeller()">
+    <div class="container">
+
+        {% include 'sidebar.html' %}
+
+        <div class="container_right">
+
+            <h1 class="title" id="title_mybooks">Inserisci il Libro</h1>
+            <div class="container_create_book" id="create_book">
+
+                <input  id="name_book_create" type="text" name="name_book_create" class="forminput" placeholder="Nome libro">
+
+                  <input  id="price_book_create" type="text" name="price_book_create" class="forminput" placeholder="Prezzo">
+
+                <select  class="round"  name="id" id="condition_book_create" onchange="loadBooks()">
+                    <option value="">Condizioni</option>
+                    <option value="1">Accettabili</option>
+                    <option value="2">Buone</option>
+                    <option value="3">Ottime</option>
+                      <option value="4">Come nuovo</option>
+                      </select>
+
+
+                <select  class="round"  name="id" id="exam_selector" onchange="loadBooks()">
+                    <option value="">Seleziona l'esame</option>
+                    <option value="1">Matematica 1</option>
+                    <option value="2">Matematica 2</option>
+                    <option value="3">Programmazione 1</option>
+                      <option value="4">Programmazione 2</option>
+                     <option value="5">Algoritmi e strutture dati</option>
+                     <option value="6">Sistemi Operativi</option>
+
+                </select>
+
+                <input type="file" id="image_book_create" id="image_book_create" name="inserisci_foto">
+                <input type="submit"  onclick="insertBook()" id="insert_book_create" value="Inserisci libro">
+            </div>
+
+
+            <div class="container_seller_book" id="container_seller_book" style="display: inline-block">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+{% endblock content %}

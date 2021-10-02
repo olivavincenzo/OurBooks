@@ -1,0 +1,11 @@
+{
+  "name": "OurBooks9",
+  "short_name": "OurBooks9",
+  "lang": "en-US",
+  "start_url": "/",
+    "scope": "/",
+  "display": "standalone",
+  "background_color": "#191919",
+  "theme_color": "white",
+  "orientation": "portrait-primary"
+}

@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+{%  block content %}
+
+<body>
+    <div class="container">
+
+        {% include 'sidebar.html' %}
+
+
+        <div class="container_right">
+            <div class="top_menu">
+
+                <select class="round" name="id" id="exam_selector" onchange="loadBooks()">
+                    <option value="">Seleziona l'esame</option>
+                    <option value="1">Matematica 1</option>
+                    <option value="2">Matematica 2</option>
+                    <option value="3">Programmazione 1</option>
+                      <option value="4">Programmazione 2</option>
+                     <option value="5">Algoritmi e strutture dati</option>
+                     <option value="6">Sistemi Operativi</option>
+
+                </select>
+
+
+                <div class="container_cart">
+                    <div class="container_cart_drop_down " id="container_cart_drop_down">
+                        <div class="container_scroll_cart " id="container_scroll_cart">
+
+                        </div>
+
+                        <div class="container_button_buy">
+                        <div id="cart_total" class="cart_total_disable">0.00 €</div>
+                        <input type="button" id="button_buy" class="button_buy_disable" value="Ordina" onclick="orderCompleted()">
+                        </div>
+                    </div>
+
+                    <div class='button_Cart' id="button_Cart" onclick="showCart()">Carrello</div>
+                         <span class='number_items_cart' id="number_items_cart">0</span>
+                    </div>
+            </div>
+
+            <div id="container_books" class="container_books"></div>
+        </div>
+
+
+    </div>
+
+ <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+{% endblock content %}
+

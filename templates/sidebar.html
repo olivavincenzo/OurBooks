@@ -1,0 +1,57 @@
+
+
+
+        <div class="sidebar">
+            <div class="logo">
+                <p>Our Books</p>
+            </div>
+            <div class="title_sidebar">
+                MENU
+            </div>
+
+
+            {% if page== "buy" %}
+            <div class="row_sidebar">
+                <img class="img_sidebar" src="../static/images/buy_hover.png" width="44" height="44">
+                <input type="button" class="title_button_sidebar" value="Compra" onclick="location.href='buy';">
+            </div>
+            {% else %}
+            <div class="row_sidebar">
+                <img class="img_sidebar" src="../static/images/buy.png"  width="44" height="44">
+                <input type="button" class="title_button_sidebar" value="Compra" onclick="location.href='buy';">
+            </div>
+            {% endif %}
+
+
+            {% if page== "sale" %}
+            <div class="row_sidebar">
+                <img class="img_sidebar" src="../static/images/seller_hover.png" width="44" height="44">
+                <input type="button" class="title_button_sidebar" value="Vendi" onclick="location.href='sale';">
+            </div>
+            {% else %}
+             <div class="row_sidebar">
+                <img class="img_sidebar" src="../static/images/seller.png"  width="44" height="44">
+                <input type="button" class="title_button_sidebar" value="Vendi" onclick="location.href='sale';">
+            </div>
+            {% endif %}
+
+
+
+            {% if page== "order" %}
+            <div class="row_sidebar">
+                <img class="img_sidebar" src="../static/images/order_hover.png"  width="44" height="44">
+                <input type="button" class="title_button_sidebar" value="Miei Ordini" onclick="location.href='LoadOrder';">
+            </div>
+            {% else %}
+             <div class="row_sidebar">
+                <img class="img_sidebar" src="../static/images/order.png" width="44" height="44">
+                <input type="button" class="title_button_sidebar" value="Miei Ordini" onclick="location.href='LoadOrder';">
+            </div>
+            {% endif %}
+
+            <div class="row_sidebar_logout">
+             <input type="button" class="title_button_sidebar_logout" onclick="location.href='logout';" value="Logout"></input>
+            </div>
+        </div>
+
+
